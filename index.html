@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <title>LevelUp</title>
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <a class="logo">LevelUp</a>
-            <button class="burger" aria-label="Open menu">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </button>
+            <a class="button-menu" aria-label="Open menu">Menu</a>
         </div>
 
     </header>
     <main>
         <section class="hero">
+            <video id="background-video" autoplay loop muted>
+                <source src="video/bg-video.mp4" type="video/mp4">
+            </video>
             <div class="container">
-                <h1 class="hero-title">LevelUp</h1>
-                <img src="img/prod.png" class="prod-img" alt="Product img">
+                <div class="title-wrapper">
+                    <h1 class="hero-title">LevelUp</h1>
+                    <span> Продукт для повышения потенции.</span>
+                </div>
+
                 <div class="description">
+                    <img src="img/prod.png" class="prod-img" alt="Product img">
                     <ul class="description-list">
                         <li class="description-item">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam obcaecati quas recusandae sapiente? Ad cum dolor minima recusandae temporibus! Architecto aut autem corporis deleniti ducimus, hic pariatur vitae voluptatum.
@@ -35,7 +39,10 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem blanditiis deserunt est eum fugiat iure magni maiores nisi porro quae quasi qui quis rerum saepe sed tempora tempore, temporibus.
                         </li>
                     </ul>
-                    <button class="button">Заказать</button>
+
+                </div>
+                <div class="button-wrapper">
+                    <a href="#order-form" class="button" >Заказать</a>
                 </div>
             </div>
         </section>
@@ -77,7 +84,9 @@
                         <p class="item-component">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda aut culpa cupiditate debitis facere fugit harum illo nulla odit possimus repellat sint veniam, vitae voluptate? Eaque eveniet exercitationem velit?</p>
                     </div>
                 </div>
-                <button class="button">Заказать</button>
+                <div class="button-wrapper">
+                    <a href="#order-form" class="button" >Заказать</a>
+                </div>
             </div>
         </section>
 
@@ -117,7 +126,9 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem blanditiis deserunt est eum fugiat iure magni maiores nisi porro quae quasi qui quis rerum saepe sed tempora tempore, temporibus.
                         </li>
                     </ul>
-                    <button class="button">Заказать</button>
+                    <div class="button-wrapper">
+                        <a href="#order-form" class="button" >Заказать</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -126,7 +137,7 @@
                 <h2 class="order-title">LevelUp</h2>
                 <span id="countdown">Обратный отсчет</span>
 
-                <form class="order-form" id="form">
+                <form class="order-form" id="order-form">
                     <img src="img/prod.png" class="prod-img" alt="Product img">
                     <p class="old-price"></p>
                     <p class="price"></p>
