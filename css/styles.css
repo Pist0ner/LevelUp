@@ -60,12 +60,12 @@ body{
     margin: 0;
     color: #cea300;
     font-size: 2em;
+    text-shadow:rgba(124,124,124,.6) 2px 2px 2px ;
 }
 .hero-title{
     margin: 50px 0 0;
     font-size: 3em;
 
-    text-shadow: -2px -2px 2px rgba(255,255,255,.1)
 }
 .description{
     display: flex;
@@ -107,13 +107,28 @@ body{
 .items{
 
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 2fr 1fr 1.5fr 1fr 2fr;
 }
+.item{
+    border: #773377 solid 1px;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
 
+}
+.item-component-img{
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 50px;
+    border: #cea300 solid 1px;
+    border-radius: 100%;
+}
 .column-line{
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
     justify-content: space-around;
     padding: 100px 20px;
 }
