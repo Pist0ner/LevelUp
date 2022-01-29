@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+
+    <script defer src="js/script.js"></script>
     <title>LevelUp</title>
 </head>
 <body>
@@ -24,7 +26,7 @@
             <div class="container">
                 <div class="title-wrapper">
                     <h1 class="hero-title">LevelUp</h1>
-                    <span> Продукт для повышения потенции.</span>
+                    <span>Product for potency enhancement.</span>
                 </div>
 
                 <div class="description">
@@ -43,13 +45,14 @@
 
                 </div>
                 <div class="button-wrapper">
-                    <a href="#order-form" class="button" >Заказать</a>
+                    <a href="#order-form" class="button" >Buy</a>
                 </div>
             </div>
         </section>
 
         <section class="components">
             <div class="container container-items">
+                <h2>Components</h2>
                 <div class="items">
                     <div class="column-data">
                         <div class="item">
@@ -95,7 +98,7 @@
 
                 </div>
                 <div class="button-wrapper">
-                    <a href="#order-form" class="button" >Заказать</a>
+                    <a href="#order-form" class="button" >Buy</a>
                 </div>
             </div>
         </section>
@@ -104,10 +107,10 @@
             <div class="container">
                 <h2>Feedback from our customers:</h2>
                 <div class="carousel">
-                    <input type="radio" id="car0" name="car" checked="checked"/>
+                    <input class="car-input" type="radio" id="car0" name="car" checked="checked"/>
                     <div></div>
 
-                    <input type="radio" id="car1" name="car"/>
+                    <input class="car-input" type="radio" id="car1" name="car"/>
                     <div>
                         <label class="carousel-arrow" for="car0"></label>
                         <div class="carousel-item" style="background-image: url(img/dmitriy-nagiev.jpg)">
@@ -118,7 +121,7 @@
                         </div>
                     </div>
 
-                    <input type="radio" id="car2" name="car"/>
+                    <input class="car-input" type="radio" id="car2" name="car"/>
                     <div>
                         <label class="carousel-arrow" for="car1"></label>
                         <div class="carousel-item" style="background-image: url(img/ksenya-sobchak.jpg)">
@@ -131,7 +134,7 @@
                             </p>
                         </div>
                     </div>
-                    <input type="radio" id="car3" name="car"/>
+                    <input class="car-input" type="radio" id="car3" name="car"/>
                     <div>
                         <label class="carousel-arrow" for="car2"></label>
                         <div class="carousel-item" style="background-image: url(img/sergey-shnurov.jpg)">
@@ -149,8 +152,13 @@
 
         <section class="promo">
             <div class="container">
-                <img class="promo-img" src="img/doctor.png" alt="Doctor img">
-                <p class="promo-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur corporis, culpa deserunt dolore doloremque eaque fugit in ipsam iure placeat porro quae quos rerum veniam vitae voluptate voluptatem voluptates.</p>
+                <h2>Promo</h2>
+                <div class="container-promo">
+                    <div class="overlay-img" style="background-image: url(img/doctor.png)">
+                        <img class="prod-img-overlay" src="img/prod.png" alt="Prod img">
+                    </div>
+                    <p class="promo-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur corporis, culpa deserunt dolore doloremque eaque fugit in ipsam iure placeat porro quae quos rerum veniam vitae voluptate voluptatem voluptates.</p>
+                </div>
                 <div class="description">
                     <ul class="description-list">
                         <li class="description-item">
@@ -163,31 +171,32 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem blanditiis deserunt est eum fugiat iure magni maiores nisi porro quae quasi qui quis rerum saepe sed tempora tempore, temporibus.
                         </li>
                     </ul>
-                    <div class="button-wrapper">
-                        <a href="#order-form" class="button" >Заказать</a>
-                    </div>
+
+                </div>
+                <div class="button-wrapper">
+                    <a href="#order-form" class="button" >Buy</a>
                 </div>
             </div>
         </section>
         <section class="order">
             <div class="container">
-                <h2 class="order-title">LevelUp</h2>
+                <h2 class="order-title">LevelUp - Product for potency enhancement.</h2>
                 <span id="countdown">Обратный отсчет</span>
 
                 <form class="order-form" id="order-form">
                     <img src="img/prod.png" class="prod-img" alt="Product img">
                     <p class="old-price"></p>
                     <p class="price"></p>
-                    <label>Имя:
+                    <label>First Name:
                         <input type="text" name="firstName" placeholder="first name"/>
                     </label>
-                    <label>Фамилия:
+                    <label>Last Name:
                         <input type="text" name="lastName" placeholder="last name"/>
                     </label>
-                    <label>Телефон:
+                    <label>Tel:
                         <input type="tel" name="tel" pattern="\d" placeholder="+7(123)4567890"/>
                     </label>
-                    <input class="button-submit" type="submit"/>
+                    <input class="button-submit" type="submit" value="Checkout"/>
 
                 </form>
             </div>
@@ -196,7 +205,7 @@
     <footer class="footer">
         <div class="container">
             <a class="logo">LevelUp</a>
-            <small class="copyright">&copy;&nbsp;2022@LevelUp. All Rights Reserved.</small>
+            <small class="copyright">&copy; LevelUp. 2022 All Rights Reserved.</small>
         </div>
     </footer>
 

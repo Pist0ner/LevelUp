@@ -13,6 +13,12 @@ body{
     font-weight: 400;
     background: linear-gradient(to left, #a8a7a8, #e2e2e2, #a8a7a8);
 }
+h2{
+    text-align: center;
+    color: #cea300;
+    font-size: 2em;
+    text-shadow: 2px 2px 1px rgba(255,255,255,.8)
+}
 .container {
     max-width: 1140px;
     padding: 0 15px;
@@ -145,4 +151,36 @@ body{
 }
 .r2{
     transform: rotate(-45deg);
+}
+.overlay-img{
+    position: relative;
+    /*width: 100%;*/
+    min-width: 500px;
+    height: 500px;
+    background: no-repeat;
+
+}
+.prod-img-overlay{
+    position: absolute;
+    top: 158px;
+    left: 47px;
+    z-index: 3;
+    height: 164px;
+    opacity: 0.5;
+}
+.container-promo{
+    display: flex;
+}
+.promo-description{
+    border: #773377 solid 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 100px 20px 300px;
+    /*margin-left: 500px;*/
+}
+.description-list{
+    border: #773377 solid 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
