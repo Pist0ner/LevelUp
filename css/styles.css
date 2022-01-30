@@ -22,7 +22,7 @@ h2{
     text-shadow: 2px 2px 1px rgba(255,255,255,.8)
 }
 .prod-img{
-    width: 100%;
+    width: 25vw;
 }
 .container {
     max-width: 1140px;
@@ -78,7 +78,7 @@ h2{
 }
 .hero-title{
     margin: 50px 0 0;
-    font-size: 3em;
+    font-size: 15vw;
 
 }
 .description{
@@ -87,13 +87,14 @@ h2{
     padding: 40px;
 
 }
+
 .title{
     line-height: 1.5;
     font-size: 1em;
     margin-left: 40px;
 }
 .description-item{
-    margin: 15px 0;
+    margin: 15px 10px 15px 0;
 }
 
 .button-wrapper{
@@ -130,6 +131,7 @@ h2{
     margin: 10px 0;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1.5vw;
 
 }
 .item-component-img{
@@ -164,7 +166,7 @@ h2{
 }
 .overlay-img{
     position: relative;
-    min-width: 400px;
+    min-width: 250px;
     height: 400px;
     background: url(../img/doctor.png) no-repeat;
     background-size: contain;
@@ -266,10 +268,42 @@ h2{
 }
 .order-form-input input{
     display: block;
-    margin: 5px auto 20px;
-
+    margin: 5px 0 20px;
+    width: 100%;
 }
 .container-footer{
     text-align: center;
     padding: 20px;
+}
+@media (max-width: 600px) {
+    .column-line{
+        padding: 40px 5px;
+    }
+
+    .description{
+        display: block;
+        text-align: center;
+    }
+    .description-list{
+        margin: 0;
+    }
+    .container-promo{
+        display: block;
+        /*text-align: center;*/
+    }
+    .promo-description{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .overlay-img{
+        height: 300px;
+    }
+    .prod-img-overlay{
+        top: 77px;
+        left: 26px;
+        height: 87px;
+    }
+    #order-form{
+        display: block;
+    }
 }
