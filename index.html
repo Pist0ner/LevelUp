@@ -31,7 +31,7 @@
 
                 <div class="description">
                     <img src="img/prod.png" class="prod-img" alt="Product img">
-                    <ul class="description-list">
+                    <ul class="description-list title">
                         <li class="description-item">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam obcaecati quas recusandae sapiente? Ad cum dolor minima recusandae temporibus! Architecto aut autem corporis deleniti ducimus, hic pariatur vitae voluptatum.
                         </li>
@@ -154,7 +154,7 @@
             <div class="container">
                 <h2>Promo</h2>
                 <div class="container-promo">
-                    <div class="overlay-img" style="background-image: url(img/doctor.png)">
+                    <div class="overlay-img">
                         <img class="prod-img-overlay" src="img/prod.png" alt="Prod img">
                     </div>
                     <p class="promo-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur corporis, culpa deserunt dolore doloremque eaque fugit in ipsam iure placeat porro quae quos rerum veniam vitae voluptate voluptatem voluptates.</p>
@@ -181,31 +181,37 @@
         <section class="order">
             <div class="container">
                 <h2 class="order-title">LevelUp - Product for potency enhancement.</h2>
-                <span id="countdown">Обратный отсчет</span>
+                <span id="countdown"></span>
 
-                <form class="order-form" id="order-form">
-                    <img src="img/prod.png" class="prod-img" alt="Product img">
-                    <p class="old-price"></p>
-                    <p class="price"></p>
-                    <label>First Name:
-                        <input type="text" name="firstName" placeholder="first name"/>
-                    </label>
-                    <label>Last Name:
-                        <input type="text" name="lastName" placeholder="last name"/>
-                    </label>
-                    <label>Tel:
-                        <input type="tel" name="tel" pattern="\d" placeholder="+7(123)4567890"/>
-                    </label>
-                    <input class="button-submit" type="submit" value="Checkout"/>
+                <form id="order-form">
+                    <div class="order-form-prod">
+                        <img src="img/prod.png" class="prod-img" alt="Product img">
+                        <p>Old prise: <span class="old-price">1000$</span></p>
+
+                        <p>New prise: <span class="new-price">500$</span></p>
+
+                    </div>
+                    <div class="order-form-input">
+                        <label>First Name:
+                            <input type="text" name="firstName" placeholder="first name"/>
+                        </label>
+                        <label>Last Name:
+                            <input type="text" name="lastName" placeholder="last name"/>
+                        </label>
+                        <label>Tel:
+                            <input type="tel" name="tel" pattern="\d" placeholder="+7(123)4567890"/>
+                        </label>
+                        <input class="button" type="submit" value="Checkout"/>
+                    </div>
 
                 </form>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container container-footer">
             <a class="logo">LevelUp</a>
-            <small class="copyright">&copy; LevelUp. 2022 All Rights Reserved.</small>
+            <small class="copyright">&copy; 2022 All Rights Reserved.</small>
         </div>
     </footer>
 
